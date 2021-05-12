@@ -11,6 +11,7 @@
 <!--     <link href="css/carousel.css" rel="stylesheet"> -->
     <link href="/css/style.css" rel="stylesheet">
     <title>Steel Soft - Software For Iron And Steel Traders</title>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeFPbMaAAAAAGW2OvAsNdieU3Nj7N4bchhHEP-M"></script>
 </head>
 <body data-spy="scroll" data-target="" data-offset="50">
     <header>
@@ -369,14 +370,14 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <form method="post" action="https://formspree.io/admin@genuineinfotech.com">
+                    <form method="post" action="https://e.genuineinfotech.com/">
                         <div class="form-group">
                             <label for="exampleInputName1">Full Name</label>
                             <input type="text" class="form-control" name="Name" id="exampleInputName1" placeholder="Name">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email</label>
-                            <input type="email" class="form-control" name="Email" id="exampleInputEmail1" placeholder="Email">
+                            <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Email">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPhonenum1">Phone</label>
@@ -460,6 +461,18 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-122616134-1');
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $( "input[name='email']" ).on("change",function(){
+        $("input[name='_gotcha']").val("");
+        grecaptcha.ready(function() {
+         grecaptcha.execute('6LeFPbMaAAAAAGW2OvAsNdieU3Nj7N4bchhHEP-M', {action: 'submit'}).then(function(token) {
+             /*console.log( "token \n " + token);*/
+             $("input[name='_gotcha']").val(token);
+         });
+        });      
+    });
     </script>
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b50843de6cd8a2f"></script>
 </body>
