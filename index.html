@@ -11,7 +11,6 @@
 <!--     <link href="css/carousel.css" rel="stylesheet"> -->
     <link href="/css/style.css" rel="stylesheet">
     <title>Steel Soft - Software For Iron And Steel Traders</title>
-    <script src="https://www.google.com/recaptcha/api.js?render=6Leew_4aAAAAAOyhbCJaNfBmDfkQOeGgiUfK1NVf"></script>
 </head>
 <body data-spy="scroll" data-target="" data-offset="50">
     <header>
@@ -370,31 +369,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <form method="post" action="https://e.genuineinfotech.com/">
-                        <div class="form-group">
-                            <label for="exampleInputName1">Full Name</label>
-                            <input type="text" class="form-control" name="Name" id="exampleInputName1" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email</label>
-                            <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPhonenum1">Phone</label>
-                            <input type="text" class="form-control" name="Phone" id="exampleInputPhonenum1" placeholder="Mobile">
-                        </div>
-                        <div class="form-group">
-                            <label for="Message">Message</label>
-                            <textarea class="form-control" name="Message" id="Message" placeholder="Message" rows="4"></textarea>
-                        </div>
-                        <div class="form-group text-center">
-                            <input type="hidden" name="_subject" value="New Enquiry from Steelsoft.in" />
-                            <input type="hidden" name="_format" value="plain" />
-                            <input type="text" name="_gotcha" style="display:none" />
-                            <input type="hidden" name="_next" value="http://www.steelsoft.in/thanks.html" />
-                            <button type="submit" class="btn btn-success">Submit</button>
-                        </div>
-                    </form>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfEOp6VFtgH2k1jXLdJq6vYBoufUsXNdxQDEjcQl8bNQ8y1-A/viewform?embedded=true" width="100%" height="812" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 </div>
                 <div class="col-md-6">
                     <div class="footer-contact">
@@ -461,19 +436,6 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-122616134-1');
-    </script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-        $( "input[name='email']" ).on("change",function(){
-        $("input[name='_gotcha']").val("");
-        grecaptcha.ready(function() {
-         grecaptcha.execute('6Leew_4aAAAAAOyhbCJaNfBmDfkQOeGgiUfK1NVf', {action: 'submit'}).then(function(token) {
-             /*console.log( "token \n " + token);*/
-             $("input[name='_gotcha']").val(token);
-         });
-        });      
-        });
-    });
     </script>
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b50843de6cd8a2f"></script>
 </body>
